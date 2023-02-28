@@ -1,6 +1,7 @@
 # UIUX_Prac
 
 괜찮은 UI를 직접 만들어보면서 느끼고 연습해보자.
+( https://uiux-prac.vercel.app )
 <br/>
 <br/>
 <br/>
