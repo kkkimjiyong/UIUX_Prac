@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ReactComponent as Humidifier } from "@/assets/smarthome/humidifier.svg";
 import { ReactComponent as Purifier } from "@/assets/smarthome/purifier.svg";
 
@@ -33,7 +33,20 @@ export const ToggleBox = ({
   );
 };
 
+const smoothAppear = keyframes`
+    from {
+        opacity: 0;
+transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+transform: translateY(0px);
+        
+    }
+`;
+
 const StyledLayout = styled.section`
+  animation: ${smoothAppear} 0.6s linear;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,7 +60,6 @@ const StyledLayout = styled.section`
     border: 1px solid black;
     box-shadow: 2px 5px 10px -5px black;
   }
-
   border-radius: 20px;
 `;
 

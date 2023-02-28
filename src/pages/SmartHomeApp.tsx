@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import HomeImg from "@/assets/smarthomeapp.png";
+import styled, { keyframes } from "styled-components";
+import HomeImg from "@/assets/smarthome/smarthomeapp.png";
 import { NavBar } from "@components/smarthome/NavBar";
 import { LightBox } from "@components/smarthome/LightBox";
 import { ToggleBox } from "@components/smarthome/ToggleBox";
+import { Header } from "@components/smarthome/Header";
 
 export const SmartHomeApp = () => {
   const [humidity, setHumidity] = useState<number>(36);
@@ -11,6 +12,7 @@ export const SmartHomeApp = () => {
 
   return (
     <StyledLayout>
+      <Header />
       <StyledBackImg src={HomeImg} alt="backimg" />
       <StyledSpaceDiv />
       <StyledFlexSection>
@@ -24,6 +26,7 @@ export const SmartHomeApp = () => {
 };
 
 const StyledLayout = styled.main`
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
