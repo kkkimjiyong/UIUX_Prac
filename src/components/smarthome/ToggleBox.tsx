@@ -120,7 +120,7 @@ const StyledToggleBox = styled.div`
 
 const StyledToggleCircle = styled.div<{ click: boolean }>`
   position: absolute;
-  left: ${({ click }) => (click ? "3px" : "25px")};
+  left: ${({ click }) => (click ? "3px" : "31px")};
   transition: all 200ms linear;
   width: 25px;
   height: 25px;

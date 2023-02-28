@@ -32,7 +32,7 @@ const StyledLayout = styled.main`
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 415px;
   height: 100vh;
   background-color: var(--color-back);
 `;

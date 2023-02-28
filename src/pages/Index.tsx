@@ -26,7 +26,7 @@ const StyledLayout = styled.main`
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 415px;
   height: 100vh;
 `;
 
