@@ -112,7 +112,7 @@ const StyledToggleBox = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 60px;
   height: 30px;
   border-radius: 15px;
   background-color: var(--color-toggleBack);

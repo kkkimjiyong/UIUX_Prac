@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export const Header = () => {
   const navigate = useNavigate();
 
+  const [click, setClick] = useState<Number>(1);
+
   return (
     <StyledLayout>
       <StyledBackSvg
-        onClick={() => navigate("/")}
+        onClick={() => {
+          navigate("/");
+        }}
         width="24"
         height="24"
         viewBox="0 0 24 24"
