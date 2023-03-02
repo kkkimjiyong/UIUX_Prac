@@ -139,7 +139,23 @@ const StyledContainer = styled.div`
   margin: 20px 0;
 `;
 
-const HomeSvg = styled.svg``;
-const SearchSvg = styled.svg``;
-const GridSvg = styled.svg``;
-const PersonSvg = styled.svg``;
+const HomeSvg = styled.svg`
+  :hover {
+    cursor: pointer;
+  }
+`;
+const SearchSvg = styled.svg`
+  :hover {
+    cursor: pointer;
+  }
+`;
+const GridSvg = styled.svg`
+  :hover {
+    cursor: pointer;
+  }
+`;
+const PersonSvg = styled.svg`
+  :hover {
+    cursor: pointer;
+  }
+`;
