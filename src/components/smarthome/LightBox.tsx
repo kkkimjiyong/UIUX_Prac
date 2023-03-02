@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const LightBox = () => {
   const [value, setValue] = useState<number>(0);
@@ -66,7 +66,21 @@ export const LightBox = () => {
     </StyledLightSection>
   );
 };
+
+const smoothAppear = keyframes`
+    from {
+        opacity: 0;
+transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+transform: translateY(0px);
+        
+    }
+`;
+
 const StyledLightSection = styled.section`
+  animation: ${smoothAppear} 600ms linear;
   display: flex;
   align-items: center;
   flex-direction: column;

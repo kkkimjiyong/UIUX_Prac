@@ -25,6 +25,15 @@ export const SmartHomeApp = () => {
   );
 };
 
+const smoothAppear = keyframes`
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+`;
+
 const StyledLayout = styled.main`
   position: relative;
   display: flex;
@@ -38,6 +47,7 @@ const StyledLayout = styled.main`
 `;
 
 const StyledBackImg = styled.img`
+  animation: ${smoothAppear} 1s linear;
   position: absolute;
   width: 100%;
   max-width: 500px;
@@ -54,23 +64,4 @@ const StyledFlexSection = styled.section`
   width: 100%;
   justify-content: space-evenly;
   display: flex;
-`;
-
-const StyledToggleSection = styled.section`
-  position: relative;
-  z-index: 10;
-  width: 45%;
-  height: 180px;
-  background-color: var(--color-dark);
-  border: 1px solid black;
-  box-shadow: 2px 5px 10px -5px black;
-  border-radius: 20px;
-`;
-
-const StyledLightSection = styled.section`
-  margin-top: 20px;
-  width: 92%;
-  height: 150px;
-  border-radius: 20px;
-  background-color: var(--color-dark);
 `;
